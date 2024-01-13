@@ -10,7 +10,7 @@ const Routage = () => {
         <Router>
             <Routes>
                 <Route path="/" element={< Home />} />
-                <Route path="/error" element={< Erreur />} />
+                <Route path="*" element={< Erreur />} />
                 <Route path="/logement" element={< Logements />} />
                 <Route path="/about" element={< Apropos />} />
             </Routes>

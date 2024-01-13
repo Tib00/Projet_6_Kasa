@@ -1,10 +1,11 @@
 import React from 'react';
 import './cadre.scss'
+import Photo from '../photo/photo'
 
 const Cadre = () => {
     return(
         <div>
-            <p>Ici un cadre 👍</p>
+            <Photo />
         </div>
     )
 }

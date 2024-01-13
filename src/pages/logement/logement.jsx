@@ -19,8 +19,12 @@ const Logements = () => {
             <Tags />
             <Owner />
             <Rating />
-            <Collapse />
-            <Collapse/>
+            <Collapse title="Description">
+                <p>Description</p>
+            </Collapse>
+            <Collapse title="Equipements">
+                <p>Description des Equipements</p>
+            </Collapse>
             <Footer />
 
         </div>

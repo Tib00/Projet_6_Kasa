@@ -1,10 +1,16 @@
 import React from 'react';
 import './photo.scss';
+import PhotoTest from '../../assets/Thumb.png';
 
 const Photo = () => {
     return(
         <div>
-            <p>Ici ta tête</p>
+            <img src={PhotoTest} alt="la mer"></img>
+            <img src={PhotoTest} alt="la mer"></img>
+            <img src={PhotoTest} alt="la mer"></img>
+            <img src={PhotoTest} alt="la mer"></img>
+            <img src={PhotoTest} alt="la mer"></img>
+            <img src={PhotoTest} alt="la mer"></img>
         </div>
     )
 }
