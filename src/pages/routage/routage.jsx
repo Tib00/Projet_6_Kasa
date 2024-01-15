@@ -4,6 +4,7 @@ import Apropos from '../a_propos/a_propos';
 import Erreur from '../erreur/erreur';
 import Home from '../home/home';
 import Logements from '../logement/logement';
+import LogementDetails from '../LogementDetails/LogementDetails';
 
 const Routage = () => {
     return(
@@ -12,6 +13,7 @@ const Routage = () => {
                 <Route path="/" element={< Home />} />
                 <Route path="*" element={< Erreur />} />
                 <Route path="/logement" element={< Logements />} />
+                <Route path="/logement/:id" element={<LogementDetails />} />
                 <Route path="/about" element={< Apropos />} />
             </Routes>
         </Router>

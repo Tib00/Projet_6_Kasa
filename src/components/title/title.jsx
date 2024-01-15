@@ -1,10 +1,10 @@
 import React from 'react';
 import './title.scss';
 
-const Title = () => {
+const Title = ({ title }) => {
     return(
         <div>
-            <p>Ici un titre</p>
+            <p>{ title }</p>
         </div>
     )
 }

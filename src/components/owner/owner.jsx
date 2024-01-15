@@ -1,10 +1,11 @@
 import React from 'react';
 import './owner.scss';
 
-const Owner = () => {
+const Owner = ({host}) => {
     return(
         <div>
-            <p>Ici le proprio 💲</p>
+            {host.name}
+            <img src={host.picture} alt="host" />
         </div>
     )
 }

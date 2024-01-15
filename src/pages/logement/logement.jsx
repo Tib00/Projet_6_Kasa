@@ -7,28 +7,39 @@ import Tags from '../../components/tags/tags'
 import Owner from '../../components/owner/owner'
 import Rating from '../../components/ratings/ratings'
 import Collapse from '../../components/collapses/collapses'
-import Footer from '../../components/footer/footer'
+import Footer from '../../components/footer/footer';
+import Cover from '../../components/cover/cover'
+import data from '../../AppartmentList.json';
 
 const Logements = () => {
-    return(
+    return (
         <div>
-            <h1>Ici ma page logements</h1>
             <Header />
-            <Slider />
-            <Title />
-            <Tags />
-            <Owner />
-            <Rating />
-            <Collapse title="Description">
-                <p>Description</p>
-            </Collapse>
-            <Collapse title="Equipements">
-                <p>Description des Equipements</p>
-            </Collapse>
-            <Footer />
 
+            {data.map((logement, index) => (
+                <div key={index}>
+                    <Cover cover={logement.cover} />
+                    <Slider pictures={logement.pictures} />
+                    <Title title={logement.title} />
+                    <Tags tags={logement.tags} />
+                    <Owner host={logement.host} />
+                    <Rating rating={logement.rating} />
+                    <Collapse title="Description">
+                        <p>{logement.description}</p>
+                    </Collapse>
+                    <Collapse title="Equipements">
+                        <ul>
+                            {logement.equipments.map((equipment, index) => (
+                                <li key={index}>{equipment}</li>
+                            ))}
+                        </ul>
+                    </Collapse>
+                </div>
+            ))}
+
+            <Footer />
         </div>
-    )
+    );
 }
 
-export default Logements
+export default Logements;

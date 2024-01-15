@@ -1,10 +1,10 @@
 import React from 'react';
 import './tags.scss';
 
-const Tags = () => {
+const Tags = ({tags}) => {
     return(
         <div>
-            <p>Ici tag un pote</p>
+            {tags}
         </div>
     )
 }
