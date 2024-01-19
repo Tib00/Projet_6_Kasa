@@ -1,11 +1,11 @@
 import React from 'react';
 import './banner.scss'
-import PhotoMer from '../../assets/paysage_mer.png';
 
-const Banner = () => {
+const Banner = ({img}) => {
     return(
-        <div>
-            <img src={PhotoMer} alt="la mer"></img>
+        <div className="banner-component">
+            <img src={img} alt="banniere"></img>
+            <p>Chez vous partout et ailleurs</p>
         </div>
     )
 }

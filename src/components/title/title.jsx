@@ -3,8 +3,8 @@ import './title.scss';
 
 const Title = ({ title }) => {
     return(
-        <div>
-            <p>{ title }</p>
+        <div className='title'>
+            <h1>{ title }</h1>
         </div>
     )
 }

@@ -1,18 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './photo.scss';
-import PhotoTest from '../../assets/Thumb.png';
 
-const Photo = () => {
-    return(
-        <div>
-            <img src={PhotoTest} alt="la mer"></img>
-            <img src={PhotoTest} alt="la mer"></img>
-            <img src={PhotoTest} alt="la mer"></img>
-            <img src={PhotoTest} alt="la mer"></img>
-            <img src={PhotoTest} alt="la mer"></img>
-            <img src={PhotoTest} alt="la mer"></img>
-        </div>
-    )
-}
+const Photo = ({ cover, title, id }) => {
+  return (
+    <div className="photo-container">  
+      <Link to={`/logement/${id}`}>
+        <img src={cover} alt={title} />
+      </Link>
+      <p>{title}</p>
+    </div>
+  );
+};
 
-export default Photo
+export default Photo;

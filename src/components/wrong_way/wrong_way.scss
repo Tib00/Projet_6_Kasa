@@ -1,0 +1,23 @@
+@import '../../style.scss';
+
+.Wway {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__img{
+        width: 600px;
+        height: 260px;
+        margin: 140px 0px 140px 0px;
+    }
+
+    &__p{
+        font-size: 36px;
+        margin-bottom: 140px;
+    }
+    &__a{
+        margin-bottom: 140px;  
+    }
+
+}

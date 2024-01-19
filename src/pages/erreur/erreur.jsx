@@ -7,11 +7,9 @@ import Footer from '../../components/footer/footer'
 const Erreur = () => {
     return(
         <div>
-            <h1>Ici ma page erreur</h1>
             <Header/>
             <Wway />
             <Footer />
-
         </div>
     )
 }

@@ -1,0 +1,59 @@
+@import '../../style.scss';
+
+.logement-container {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  ///////////////////// Ici le slider ////////////////////////////
+  .slider{
+    margin-top: 50px;
+  }
+  /// Ici le Titre et les tags ////////////////////////////////////
+  .titleTag-ownerRating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+  }
+  .owner-and-rating{
+    margin-top: 50px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+
+  ///////////////// Ici les collapses //////////////////////
+  .collapse-container {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .collapses-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+  }
+////////// Ici la partie pour les Tags /////////////////
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .tag {
+    background-color: #FF6060;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }

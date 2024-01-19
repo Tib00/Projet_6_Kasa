@@ -1,13 +1,12 @@
-import React from 'react';
-import './owner.scss';
+import './owner.scss'
 
-const Owner = ({host}) => {
-    return(
-        <div>
-            {host.name}
-            <img src={host.picture} alt="host" />
-        </div>
-    )
-}
-
-export default Owner
+const Owner = ({ host }) => {
+    return (
+      <div className="owner-container">
+        <p>{host.name}</p>
+        <img src={host.picture} alt="host" className="rounded-photo" />
+      </div>
+    );
+  }
+  
+  export default Owner;

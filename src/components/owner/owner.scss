@@ -1,0 +1,16 @@
+@import '../../style.scss';
+
+.owner-container {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-style: normal;
+  
+  .rounded-photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-left: 15px;
+  }
+}  

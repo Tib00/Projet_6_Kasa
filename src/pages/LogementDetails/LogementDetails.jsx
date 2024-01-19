@@ -1,5 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+
+import './LogementDetails.scss'
+
 import Header from '../../components/header/header';
 import Slider from '../../components/slider/slider';
 import Title from '../../components/title/title';
@@ -8,7 +11,6 @@ import Owner from '../../components/owner/owner';
 import Rating from '../../components/ratings/ratings';
 import Collapse from '../../components/collapses/collapses';
 import Footer from '../../components/footer/footer';
-import Cover from '../../components/cover/cover';
 import data from '../../AppartmentList.json';
 import Erreur from '../erreur/erreur'
 
@@ -24,24 +26,31 @@ const LogementDetails = () => {
   }
 
   return (
-    <div>
+    <div className='logement-container'>
       <Header />
-      <Cover cover={logement.cover} />
-      <Slider pictures={logement.pictures} />
-      <Title title={logement.title} />
-      <Tags tags={logement.tags} />
-      <Owner host={logement.host} />
-      <Rating rating={logement.rating} />
-      <Collapse title="Description">
-        <p>{logement.description}</p>
-      </Collapse>
-      <Collapse title="Equipements">
-        <ul>
-          {logement.equipments.map((equipment, index) => (
-            <li key={index}>{equipment}</li>
-          ))}
-        </ul>
-      </Collapse>
+      <Slider className="slider" pictures={logement.pictures} />
+      <div className='titleTag-ownerRating'>
+        <div className='title-and-tag'>
+          <Title title={logement.title} className="title" />
+          <Tags tags={logement.tags} />
+        </div>
+        <div className='owner-and-rating'>
+          <Owner className='owner' host={logement.host} />
+          <Rating rating={logement.rating} />
+        </div>
+      </div> 
+      <div className='collapses-container'>
+        <Collapse title="Description">
+          <p>{logement.description}</p>
+        </Collapse>
+        <Collapse title="Equipements">
+          <ul>
+            {logement.equipments.map((equipment, index) => (
+              <li key={index}>{equipment}</li>
+            ))}
+          </ul>
+        </Collapse>
+      </div>
       <Footer />
     </div>
   );

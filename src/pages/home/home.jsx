@@ -4,12 +4,13 @@ import Header from '../../components/header/header'
 import Banner from '../../components/banner/banner'
 import Cadre from '../../components/cadre/cadre'
 import Footer from '../../components/footer/footer'
+import PhotoMer from '../../assets/paysage_mer.png';
 
 const Home = () => {
     return(
         <div>
             <Header />
-            <Banner />
+            <Banner img={PhotoMer} />
             <Cadre />
             <Footer />
         </div>

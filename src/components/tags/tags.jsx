@@ -1,12 +1,15 @@
 import React from 'react';
-import './tags.scss';
 
-const Tags = ({tags}) => {
-    return(
-        <div>
-            {tags}
+const Tags = ({ tags }) => {
+  return (
+    <div className="tags-container">
+      {tags.map((tag, index) => (
+        <div className="tag" key={index}>
+          {tag}
         </div>
-    )
-}
+      ))}
+    </div>
+  );
+};
 
-export default Tags
+export default Tags;
