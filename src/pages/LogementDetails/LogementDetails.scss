@@ -1,23 +1,27 @@
 @import '../../style.scss';
 
-.logement-container {
-    
+ .logement-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
-    min-height: 100vh;
-  }
+   }
+//   /////////////////////Ici le header ////////////////////////
+
+
   ///////////////////// Ici le slider ////////////////////////////
   .slider{
     margin-top: 50px;
+    align-self: center;
   }
   /// Ici le Titre et les tags ////////////////////////////////////
   .titleTag-ownerRating {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 80%;
+    margin-bottom: 20px;
+    @extend .container-80;
+    align-self: center;
   }
   .owner-and-rating{
     margin-top: 50px;
@@ -31,14 +35,18 @@
   ///////////////// Ici les collapses //////////////////////
   .collapse-container {
     flex: 1;
-    margin-right: 20px;
+    margin-bottom: 50px;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
   }
   
   .collapses-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 80%;
+    @extend .container-80;
+    align-self: center;
   }
 ////////// Ici la partie pour les Tags /////////////////
   .tags-container {
@@ -56,4 +64,4 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
-  }
+   }

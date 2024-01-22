@@ -2,8 +2,8 @@
 
 .slider {
     position: relative;
-  width: 80%; /* Choisissez la largeur souhaitée */
-  height: 600px; /* Choisissez la hauteur souhaitée */
+    height: 600px; /* Choisissez la hauteur souhaitée */
+    @extend .container-80;
   
     
   

@@ -3,14 +3,13 @@
 .header-container {
   @extend .center-horizontal;
   @extend .container-80;
-
   justify-content: space-between;
   margin-top: 40px;
-
+  margin-left: 5%;
   img {
     width: 210px;
     height: 68px;
-    margin-left: 10%;
+    
   }
 
   nav {

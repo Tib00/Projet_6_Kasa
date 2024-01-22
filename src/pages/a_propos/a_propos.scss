@@ -1,10 +1,10 @@
 @import '../../style.scss';
 
 .collapses-container-about {
+  @extend .container-80;
   margin: 40px 5%  40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 90%;
   gap: 30px;
 }

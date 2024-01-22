@@ -27,7 +27,7 @@ const LogementDetails = () => {
 
   return (
     <div className='logement-container'>
-      <Header />
+      <Header className='poil' />
       <Slider className="slider" pictures={logement.pictures} />
       <div className='titleTag-ownerRating'>
         <div className='title-and-tag'>
