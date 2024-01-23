@@ -5,19 +5,36 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 139px;
 
     &__img{
         width: 600px;
         height: 260px;
-        margin: 140px 0px 140px 0px;
     }
 
     &__p{
+
         font-size: 36px;
-        margin-bottom: 140px;
+        font-weight: 500;
     }
-    &__a{
-        margin-bottom: 140px;  
+
+}
+
+@media only screen and (max-width: 768px) {
+    .Wway{
+        gap: 113px;
+        
+        
+        &__img{
+            width: 200px;
+            height: 99px;
+        }
+
+        &__p{
+            font-size: 18px;
+            text-align: center;
+            width: 80%;
+        }
     }
 
 }

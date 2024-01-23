@@ -47,3 +47,25 @@
       font-size: 18px; // Ajustez la taille de la police selon vos besoins
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    .slider {
+      height: 255px;
+
+      .left-button {
+        left: 15px;
+        width: 24px;
+        height: 24px;
+      }
+    
+      .right-button {
+        right: 15px;
+        width: 24px;
+        height: 24px; 
+      }
+
+      .photo-counter{
+        display: none;
+      }
+    }
+  }

@@ -1,18 +1,14 @@
 import React from 'react';
 import './home.scss'
-import Header from '../../components/header/header'
 import Banner from '../../components/banner/banner'
 import Cadre from '../../components/cadre/cadre'
-import Footer from '../../components/footer/footer'
 import PhotoMer from '../../assets/paysage_mer.png';
 
 const Home = () => {
     return(
-        <div>
-            <Header />
-            <Banner className='banner-home' img={PhotoMer} />
-            <Cadre />
-            <Footer />
+        <div className='home'>
+            <Banner className='banner-home' img={PhotoMer} titleBanner='Chez vous partout et ailleurs' />
+            <Cadre className='cadre-home'/>
         </div>
     )
 }

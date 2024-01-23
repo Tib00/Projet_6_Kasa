@@ -21,3 +21,9 @@
     margin: 29px 0 0;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .footer-container{
+    padding-right: 10%;
+  }
+}

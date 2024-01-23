@@ -1,1 +1,11 @@
 @import '../../style.scss';
+
+.error-container{
+    margin: 139px 0px 139px 0px
+}
+
+@media only screen and (max-width: 768px) {
+    .error-container{
+        margin: 113px 0px 113px 0px; 
+    }
+}

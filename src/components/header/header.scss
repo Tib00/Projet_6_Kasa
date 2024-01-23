@@ -35,3 +35,29 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  /* Pour les écrans de largeur maximale de 768px (tablette et mobile) */
+  .header-container {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+
+    img {
+      width: 145px;
+      height: 48px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+  
+      a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 12px;
+        font-weight: 500;
+        }
+    }
+  }
+}
